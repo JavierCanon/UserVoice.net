@@ -1,0 +1,157 @@
+.feedback {
+	margin:auto;
+	width:90%;
+	max-width:700px;
+}
+
+.feedback__item {
+	margin:0 0 60px;
+	color:#222;
+}
+
+.feedback__user {
+	margin-bottom:20px;
+	display:flex;
+	align-items:center;
+}
+
+.feedback__avatar {
+	width:70px;
+	height:70px;
+	margin-right:10px;
+	border-radius:50%;
+}
+
+.feedback__link {
+	color:#222;
+}
+
+.feedback__name {
+	font-size:18px;
+	display:inline;
+}
+
+.feedback__link .feedback__name {
+	border-bottom:1px solid #ccc;
+}
+
+.feedback__text {
+	color:#444;
+	font-size:15px;
+	line-height:1.4em;
+}
+
+.feedback-container {
+	margin:auto;
+	width:90%;
+	max-width:700px;
+	display:none;
+}
+
+.feedback-form__notice {
+	text-align:center;
+	font-size:18px;
+}
+
+.feedback-form__notice_false {
+	padding:10px 0;
+	background:#f5e1e1;
+	margin-top:20px;
+}
+
+.feedback-form__notice_true {
+	padding:10px 0;
+	background:#e4f4e5;
+	margin-top:20px;
+}
+
+.feedback-notice {
+	margin:20px 0;
+	text-align:center;
+	color:#666;
+	font-size:16px;
+}
+
+.feedback-form {
+	width:100%;
+	margin:30px 0;
+}
+
+.feedback-form ::placeholder {
+	color:#888;
+}
+
+.feedback-form input[type="url"] {
+	width:100%;
+	border:none;
+	border-left:1px solid #666;
+	background:#f5f5f5;
+	height:50px;
+	font-size:14px;
+	padding:0 20px;
+	margin:10px 0;
+}
+
+.feedback__textarea {
+	width:100%;
+	border:none;
+	border-left:1px solid #666;
+	background:#f5f5f5;
+	height:120px;
+	font-size:14px;
+	padding:20px;
+}
+
+.feedback__submit-button {
+	display:block;
+	width:150px;
+	text-align:center;
+	margin:20px 0;
+	font-size:18px;
+	border:1px solid;
+	height:50px;
+	border-radius:3em;
+	background:#222;
+	color:#fff;
+}
+
+.feedback__submit-button:hover,.feedback-add-button:hover,.feedback-add-button_active {
+	background:#333;
+	color:#fff;
+}
+
+.feedback-actions {
+	text-align:center;
+}
+
+.feedback-add-button {
+	width:180px;
+	text-align:center;
+	margin:5px;
+	font-size:18px;
+	border:1px solid;
+	height:50px;
+	border-radius:3em;
+	background:#222;
+	color:#fff;
+}
+
+.feedback-load-more-button {
+	width:180px;
+	text-align:center;
+	margin:5px;
+	font-size:18px;
+	border:1px solid;
+	height:50px;
+	border-radius:3em;
+}
+
+.feedback-load-more-button:hover {
+	background:#333;
+	color:#fff;
+}
+
+.feedback-notice .sl {
+	justify-content:center;
+	margin:20px 0;
+}

@@ -1,0 +1,32 @@
+{
+  "name":         "wearerequired/user-feedback",
+  "description":  "Allows users to submit feedback and bug reports anywhere on the site using an interactive feedback button.",
+  "type":         "wordpress-plugin",
+  "license":      "GPL-2.0+",
+  "authors":      [
+    {
+      "name":     "required",
+      "email":    "support@required.ch",
+      "homepage": "https://required.com",
+      "role":     "Developer"
+    }
+  ],
+  "require":      {
+    "php":                                 ">=5.4",
+    "wearerequired/wp-requirements-check": "^1.0"
+  },
+  "require-dev":  {
+    "phpmd/phpmd":              "~2.4.0",
+    "wp-coding-standards/wpcs": "dev-develop"
+  },
+  "scripts":      {
+    "post-install-cmd": "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs",
+    "post-update-cmd":  "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
+  },
+  "autoload":     {
+    "psr-4": {
+      "Required\\User_Feedback\\":        "classes",
+      "Required\\User_Feedback\\Tests\\": "tests/phpunit/tests"
+    }
+  }
+}

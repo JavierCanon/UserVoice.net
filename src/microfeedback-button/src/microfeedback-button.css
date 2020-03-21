@@ -1,0 +1,37 @@
+button.microfeedback-button {
+  cursor: pointer;
+  text-decoration: none;
+  position: fixed;
+  bottom: 0;
+  right: 3.125em;
+  padding: 4px 7px;
+  font-size: 0.875em;
+  border-radius: 5px 5px 0 0;
+  z-index: 1001;
+  transition: all 0.2s ease-in-out;
+
+  /* Button reset */
+  border: none;
+  margin: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
+
+button.microfeedback-button:hover,
+button.microfeedback-button--clicked {
+  /* Darken background color a bit */
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNikAQAACIAHF/uBd8AAAAASUVORK5CYII=");
+  padding-bottom: 10px;
+}

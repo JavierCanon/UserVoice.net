@@ -1,0 +1,155 @@
+/**
+ * Buttons
+ */
+
+.user-feedback-button {
+	outline: none;
+	cursor: pointer;
+	background-clip: padding-box;
+	display: block;
+	font-size: 16px;
+	line-height: 30px;
+	margin: 0;
+	padding: 0 5px;
+	border: 1px solid transparent;
+	text-transform: none;
+	transform: none;
+	transition: none;
+	border-radius: 0;
+	box-shadow: none;
+	text-shadow: none;
+
+	&:active,
+	&:hover {
+		transform: none;
+		box-shadow: none;
+		text-shadow: none;
+		border: 1px solid transparent;
+	}
+
+	&:focus {
+		background: inherit;
+		border: 1px solid $color-black;
+		color: inherit;
+	}
+}
+
+.user-feedback-button-gray {
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	color: $color-black;
+	border-radius: 2px;
+	background-image: linear-gradient(to bottom, $color-light-gray, $color-white);
+
+	&:focus,
+	&:hover {
+		color: inherit;
+		border: 1px solid $color-light-gray;
+		background-image: linear-gradient(to bottom, $color-light-gray, $color-white);
+	}
+}
+
+.user-feedback-button-primary {
+	text-align: center;
+	border: 1px solid transparent;
+	color: $color-white;
+	background: $color-blue;
+	padding: 0 15px;
+	font-weight: normal;
+
+	&:focus,
+	&:hover {
+		color: $color-white;
+		background: $color-blue-hover;
+		border: 1px solid transparent;
+	}
+}
+
+.user-feedback-button-secondary {
+	text-align: center;
+	border: 1px solid transparent;
+	color: $color-gray;
+	background: transparent;
+	font-weight: normal;
+
+	&:focus,
+	&:hover {
+		color: $color-black;
+		background: transparent;
+	}
+}
+
+.user-feedback-bubble {
+	position: absolute;
+	bottom: 20px;
+	min-width: 50px;
+	width: 50px;
+	height: 50px;
+	border: 1px solid transparent;
+	border-radius: 100%;
+	z-index: 100000;
+	color: $color-white;
+	background: rgba($color-blue, 0.75);
+	pointer-events: auto;
+	box-shadow: 0 0 20px rgba($color-blue-hover, 0.5);
+	transition: background 0.1s ease-in-out;
+
+	&:focus {
+		color: $color-white;
+		border: 1px solid rgba($color-light-gray, 0.75);
+		background: rgba($color-blue, 0.75);
+	}
+
+	&:hover {
+		color: $color-white;
+		background: $color-blue-hover;
+	}
+
+	&.top {
+		top: 0;
+	}
+	&.right {
+		right: 0;
+	}
+	&.bottom {
+		bottom: 0;
+	}
+	&.left {
+		left: 0;
+	}
+	&.middle {
+		right: 0;
+	}
+
+	&.hidden {
+		display: none;
+	}
+}
+
+/**
+ * Feedback Button at the beginning
+ */
+.user-feedback-button.user-feedback-button-init {
+	font-family: $font-stack;
+	font-size: 16px;
+	font-weight: normal;
+	text-align: center;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, .2);
+	background-clip: padding-box;
+	border-radius: 2px;
+	padding: 5px 15px;
+	outline: none;
+	position: fixed;
+	bottom: -3px;
+	right: 60px;
+	z-index: 100010;
+	cursor: pointer;
+
+	&:focus,
+	&:hover {
+		background: $color-blue-hover;
+		border: 1px solid $color-blue-hover;
+		color: $color-white;
+	}
+}

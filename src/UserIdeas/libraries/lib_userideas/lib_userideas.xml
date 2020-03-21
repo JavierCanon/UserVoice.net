@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="library" version="3.6" method="upgrade">
+    <name>UserIdeas Library</name>
+    <libraryname>Userideas</libraryname>
+    <author>Todor Iliev</author>
+    <authorEmail>todor@itprism.com</authorEmail>
+    <authorUrl>http://itprism.com</authorUrl>
+    <copyright>Copyright (C) 2016 Todor Iliev ( ITPrism.com ). All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.en.html GNU/GPLv3</license>
+    <packager>ITPrism</packager>
+    <packagerurl>http://itprism.com</packagerurl>
+    <version>2.4</version>
+    <creationDate>17 November, 2016</creationDate>
+    <description>UserIdeas Library</description>
+
+    <files>
+        <folder>Attachment</folder>
+        <folder>Category</folder>
+        <folder>Comment</folder>
+        <folder>Container</folder>
+        <folder>Helper</folder>
+        <folder>Item</folder>
+        <folder>Statistic</folder>
+        <folder>Status</folder>
+        <folder>Validator</folder>
+        <folder>Vote</folder>
+
+        <file>Constants.php</file>
+        <file>init.php</file>
+        <file>Version.php</file>
+    </files>
+
+</extension>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="item">
+        <field name="title" type="text" class="input-xxlarge input-large-text"
+               label="COM_USERIDEAS_TITLE"
+               description="COM_USERIDEAS_TITLE_DESC"
+               filter="trim"
+               required="true"
+                />
+
+        <field name="alias" type="text"
+               label="JFIELD_ALIAS_LABEL"
+               description="JFIELD_ALIAS_DESC"
+               filter="trim"
+                />
+
+        <field name="description" type="editor" buttons="false"
+               label="COM_USERIDEAS_DESCRIPTION_TITLE"
+               description="COM_USERIDEAS_DESCRIPTION_DESC"
+               filter="trim"
+               required="true"
+               />
+
+        <field name="catid" type="category"
+               label="JCATEGORY"
+               description="JFIELD_CATEGORY_DESC"
+               extension="com_userideas"
+               />
+
+        <field name="status_id" type="uistatuses"
+               label="COM_USERIDEAS_ITEM_STATUS"
+               description="COM_USERIDEAS_ITEM_STATUS_DESCRIPTION"
+                />
+
+        <field
+                name="user_id"
+                type="user"
+                label="JGLOBAL_FIELD_CREATED_BY_LABEL"
+                desc="JGLOBAL_FIELD_CREATED_BY_DESC"
+                />
+
+        <field name="published" type="list" class="chzn-color"
+               label="JSTATUS"
+               description="JFIELD_PUBLISHED_DESC"
+               filter="intval"
+               size="1"
+               default="1"
+               >
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+            <option value="-2">JTRASHED</option>
+        </field>
+
+        <field name="id" type="text" class="readonly"
+               label="JGLOBAL_FIELD_ID_LABEL"
+               description="JGLOBAL_FIELD_ID_DESC"
+               readonly="true"
+               default="0"
+                />
+
+        <field name="record_date" type="calendar" label="JGLOBAL_FIELD_CREATED_LABEL"
+               description="JGLOBAL_FIELD_CREATED_DESC" size="22"
+               format="%Y-%m-%d %H:%M:%S" filter="user_utc" />
+
+        <field name="tags"
+               type="tag"
+               label="JTAG"
+               description="JTAG_DESC"
+               class="span12"
+               multiple="true"
+                >
+        </field>
+
+        <field name="access" type="accesslevel" label="JFIELD_ACCESS_LABEL" description="JFIELD_ACCESS_DESC" size="1" />
+
+    </fieldset>
+
+    <fieldset name="accesscontrol">
+
+        <field name="rules" type="rules" label="JFIELD_RULES_LABEL"
+               translate_label="false" filter="rules"
+               component="com_userideas" section="item" validate="rules"
+        />
+
+        <field name="asset_id" type="hidden" filter="unset" />
+
+    </fieldset>
+
+    <fields name="params" label="COM_USERIDEAS_OPTIONS">
+        <fieldset name="basic" label="COM_USERIDEAS_OPTIONS">
+            <field
+                    name="show_title"
+                    type="list"
+                    class="chzn-color"
+                    label="JGLOBAL_SHOW_TITLE_LABEL"
+                    description="JGLOBAL_SHOW_TITLE_DESC">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="1">JSHOW</option>
+                <option value="0">JHIDE</option>
+            </field>
+
+            <field name="show_tags"
+                   type="list"
+                   class="chzn-color"
+                   label="JGLOBAL_SHOW_TAGS_LABEL"
+                   description="JGLOBAL_SHOW_TAGS_DESC"
+                    >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="1">JSHOW</option>
+                <option value="0">JHIDE</option>
+            </field>
+
+            <field name="show_intro"
+                   type="list"
+                   class="chzn-color"
+                   description="JGLOBAL_SHOW_INTRO_DESC"
+                   label="JGLOBAL_SHOW_INTRO_LABEL"
+                    >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="1">JSHOW</option>
+                <option value="0">JHIDE</option>
+            </field>
+
+            <field
+                    name="show_category"
+                    type="list"
+                    class="chzn-color"
+                    label="JGLOBAL_SHOW_CATEGORY_LABEL"
+                    description="JGLOBAL_SHOW_CATEGORY_DESC">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option	value="0">JHIDE</option>
+                <option	value="1">JSHOW</option>
+            </field>
+
+            <field
+                    name="show_author"
+                    type="list"
+                    class="chzn-color"
+                    label="JGLOBAL_SHOW_AUTHOR_LABEL"
+                    description="JGLOBAL_SHOW_AUTHOR_DESC">
+                <option	value="">JGLOBAL_USE_GLOBAL</option>
+                <option	value="0">JHIDE</option>
+                <option	value="1">JSHOW</option>
+            </field>
+
+            <field
+                    name="show_create_date"
+                    type="list"
+                    class="chzn-color"
+                    label="JGLOBAL_SHOW_CREATE_DATE_LABEL"
+                    description="JGLOBAL_SHOW_CREATE_DATE_DESC">
+                <option	value="">JGLOBAL_USE_GLOBAL</option>
+                <option	value="0">JHIDE</option>
+                <option	value="1">JSHOW</option>
+            </field>
+
+            <field
+                    name="show_hits"
+                    type="list"
+                    class="chzn-color"
+                    label="JGLOBAL_SHOW_HITS_LABEL"
+                    description="JGLOBAL_SHOW_HITS_DESC">
+                <option	value="">JGLOBAL_USE_GLOBAL</option>
+                <option	value="0">JHIDE</option>
+                <option	value="1">JSHOW</option>
+            </field>
+
+            <field
+                    name="show_status"
+                    type="list"
+                    class="chzn-color"
+                    label="COM_USERIDEAS_SHOW_STATUS_LABEL"
+                    description="COM_USERIDEAS_SHOW_STATUS_DESC">
+                <option	value="">JGLOBAL_USE_GLOBAL</option>
+                <option	value="0">JHIDE</option>
+                <option	value="1">JSHOW</option>
+            </field>
+
+        </fieldset>
+    </fields>
+</form>

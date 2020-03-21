@@ -1,0 +1,27 @@
+# Default task
+default:
+- 'replace:header'
+- 'replace:plugin'
+- 'js'
+- 'css'
+
+js:
+- 'jshint'
+- 'browserify'
+- 'uglify'
+
+css:
+- 'sass'
+- 'postcss'
+- 'rtlcss'
+
+# Build task
+build:
+- 'default'
+- 'copy:main'
+- 'compress'
+
+# Prepare a WordPress.org release
+release:prepare:
+- 'build'
+- 'copy:svn'

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.6" method="upgrade">
+    <name>UserIdeas Package</name>
+    <packagename>userideas</packagename>
+    <author>Todor Iliev</author>
+    <authorEmail>todor@itprism.com</authorEmail>
+    <authorUrl>http://itprism.com</authorUrl>
+    <copyright>Copyright (C) 2016 Todor Iliev ( ITPrism.com )</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.en.html GNU/GPLv3</license>
+    <version>2.4</version>
+    <creationDate>17 November, 2016</creationDate>
+    <url>http://itprism.com</url>
+    <packager>Todor Iliev</packager>
+    <packagerurl>http://itprism.com</packagerurl>
+    <description><![CDATA[
+	<p><a href='http://itprism.com/free-joomla-extensions/ecommerce-gamification/feedbacks-ideas-suggestions' target='_blank'>User Ideas</a> is an extension that provides functionality for creating and managing ideas pool, suggestions, issues, user feedbacks,...</p>
+	<p><a href='http://itprism.com/' target='_blank'>Subscribe for the newsletter</a> to receive <strong>gifts</strong>, <strong>discount codes</strong>, information about <strong>updates</strong> and information about <strong>new ITPrism extensions</strong>.</p>
+	<p>Please, <a href='http://extensions.joomla.org/extensions/extension/contacts-and-feedback/testimonials-a-suggestions/user-ideas' target='_blank'>vote for the extension</a> on Joomla! Extensions Directory</p>
+	]]></description>
+
+    <files folder="packages">
+        <file type="component" id="com_userideas">com_userideas.zip</file>
+        <file type="library" id="lib_userideas">lib_userideas.zip</file>
+        <file type="plugin" id="userideasadminmail" group="content">plg_content_userideasadminmail.zip</file>
+        <file type="plugin" id="userideasvote" group="system">plg_system_userideasvote.zip</file>
+        <file type="plugin" id="vote" group="userideas">plg_userideas_vote.zip</file>
+    </files>
+
+    <scriptfile>install.php</scriptfile>
+
+    <updateservers>
+        <server type="extension" priority="1" name="UserIdeas Package">http://cdn.itprism.com/updates/userideas/package.xml</server>
+        <server type="extension" priority="2" name="UserIdeas Package">http://cdn.itprism.com/updates/userideas.xml</server>
+    </updateservers>
+</extension>

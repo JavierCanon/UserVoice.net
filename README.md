@@ -1,7 +1,17 @@
 ﻿# UserVoice.net
 User feedback system for SMB (small and medium-sized business) inspired in uservoice.com
 
-## Philosophy
+## What does it Do? ##
+
+* Save HTML, images, scripts, and files from an URL like a navigator does.
+* With minimal effort can run the website in new web server. 
+
+### Screenshots
+
+![](docs/img/screenshoot1.png?raw=true)
+
+
+## Philosophy of Javier Cañon
 * KISS by design and programming. An acronym for "keep it simple, stupid" or "keep it stupid simple", is a design principle. The KISS principle states that most systems work best if they are kept simple rather than made complicated; therefore, simplicity should be a key goal in design, and unnecessary complexity should be avoided. Variations on the phrase include: "Keep it simple, silly", "keep it short and simple", "keep it simple and straightforward", "keep it small and simple", or "keep it stupid simple".
 
 * Select the best tools for the job, use tools that take less time to finish the job.
@@ -10,60 +20,30 @@ User feedback system for SMB (small and medium-sized business) inspired in userv
 * Computers are machines, more powerful every year, give them hard work, concentrate on being productive.
 
 
+## Community ##
 
-## Getting Started
+* Website, videos, photos, docs, etc. ()
+* [Group](https://www.facebook.com/groups/socialoffice/)
+* [Wiki](https://github.com/JavierCanon/Social-Office-Webakeitor/wiki)
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+## Issues and Bug Traking ##
+Please submit *bug reports* or *feature requests* on GitHub:
+* [Issue | Request Features](https://github.com/JavierCanon/Social-Office-Webakeitor/issues)
 
-### Prerequisites
+## Requeriments ##
 
-What things you need to install the software and how to install them
+* Windows 8.1, 10.
+* .Net Framework 4.8.
 
-```
-```
+## Install 
 
-### Installing
+* [Download Last Build](https://github.com/JavierCanon/Social-Office-Webakeitor/releases)
+* [Old Installers](https://github.com/JavierCanon/Social-Office-Webakeitor/releases)
 
+## Development Dependencies and Licenses Requirements ##
 
-1. 
-2. 
-
-```
-
-```
-
-#### Screenshots
-
-![](docs/img/screenshoot1.png?raw=true)
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-
-Please read [CONTRIBUTING.md](/CONTRIBUTING.md) 
-
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-
-## Built With
-
-* .Net Framework 4.8
-* Devexpress
-
+* Microsoft Windows 8.1, 10.
+* Microsoft .Net Framework Target 4.8
 
 ## Contributing
 
@@ -76,18 +56,30 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Javier Cañon** - *Initial work* - [JavierCanon](https://www.javiercanon.com)
+* **Javier Cañon** - *Initial work* - [www.JavierCanon.com](https://www.javiercanon.com)
 
 See also the list of [contributors](/AUTHORS.md) who participated in this project.
 
 
 ## Supported by, thanks to 
+
+
 ![Caphyon](https://raw.githubusercontent.com/JavierCanon/Social-Office-Browser/master/docs/img/advanced-installer-iconNavLogo.png)
-* [Caphyon Advanced Installer](https://www.advancedinstaller.com) 
-* [Softcanon](https://www.softcanon.com)
+
+[Caphyon Advanced Installer](https://www.advancedinstaller.com) 
+-- 
+
+![Softcanon](https://github.com/JavierCanon/Social-Office-Webackeitor/raw/master/docs/images/logo_softcanon_200x75.gif) 
+
+[Softcanon](https://www.softcanon.com) 
+-- 
+
+* [SQL Pretty Printer for SQL Server](http://www.dpriver.com/products/sqlpp/index.php) 
+-- 
 
 ## License
 
 This project is licensed under the GNU AFFERO GENERAL PUBLIC LICENSE Version 3 - see the [LICENSE.md](/LICENSE.md) file for details.
 
-Made with ❤️ by [Javier Cañon](https://www.javiercanon.com).
+---
+Made with ❤️ by **[Javier Cañon](https://www.javiercanon.com)**.

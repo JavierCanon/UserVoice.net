@@ -1,0 +1,85 @@
+@CHARSET "UTF-8";
+
+.ui-item {
+	border: thin solid #c1c1c1;
+	padding: 3px;
+	background-color: #f9f9f9;
+	margin-top: 10px;
+}
+
+.ui-vote {
+	width: auto;
+	/*height: 80px;
+	 border: thin solid #c1c1c1 ; */
+	 margin: 0px 10px 10px 0;
+	 
+}
+
+.ui-btn-vote {
+	text-transform: uppercase;
+	margin: 5px 3px 5px 3px;
+	font-weight: bold;
+	
+}
+
+.ui-vote-counter {
+	text-align: center;
+	vertical-align: middle;
+	font-size: xx-large;
+	padding: 15px;
+	border: thin solid #c1c1c1;
+	border-radius: 5px;
+}
+
+.ui-comment {
+	border: thin solid #e0e0e0 ;
+	background-color: #fbfced;
+	border-radius: 3px;
+	padding: 5px;
+	margin-top: 10px;
+}
+
+.ui-comment .media-body {
+	padding-left: 10px;
+}
+
+.ui-comment .well {
+	margin:5px 0 !important;
+}
+
+.margin-top-10 {
+	margin-top: 10px;
+}
+
+.ui-status-label {
+	margin-left: 10px;
+	text-decoration: none;
+}
+
+.ui-status-label:hover {
+	text-decoration: none;
+}
+
+.ui-category-label {
+	margin: 0 10px 0 0;
+}
+
+.child-block-right a{
+	display: block;
+	float: right;
+	margin-left: 10px;
+}
+
+.ui-tags-wrapper, .ui-tags-wrapper .tags {
+	display: inline;
+}
+
+.ui-tags-wrapper .tags span{
+	margin-left: 10px;
+}
+
+.ui-mod-filters {
+	padding-left: 0px;
+	margin-top: 5px;
+	list-style: none;
+}

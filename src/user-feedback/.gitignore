@@ -1,0 +1,23 @@
+# General
+.DS_Store
+
+# npm
+/node_modules
+package-lock.json
+
+# Release task
+/release
+
+# Build files
+/js/*.js
+/js/*.map
+/css/*.css
+/css/*.map
+
+# Sass
+.sass-cache
+
+# Composer
+composer.lock
+vendor/*
+!vendor/.gitkeep

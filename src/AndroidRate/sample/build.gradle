@@ -1,0 +1,86 @@
+/*
+ * Copyright 2017 - 2018 Vorlonsoft LLC
+ *
+ * Licensed under The MIT License (MIT)
+ */
+
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            storeFile file(System.getenv('STOREFILE'))
+            storePassword System.getenv('STOREPWD')
+            keyAlias 'Vorlonsoft LLC'
+            keyPassword System.getenv('KEYPWD')
+        }
+    }
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId 'com.vorlonsoft.android.rate.sample'
+        minSdkVersion 14
+        targetSdkVersion 28
+        versionCode version_code
+        versionName version
+    }
+    compileOptions {
+        sourceCompatibility java_version
+        targetCompatibility java_version
+    }
+    bundle {
+        language {
+            enableSplit = true
+        }
+        density {
+            enableSplit = true
+        }
+        abi {
+            enableSplit = true
+        }
+    }
+    buildTypes {
+        all {
+            jniDebuggable false
+            renderscriptDebuggable false
+            renderscriptOptimLevel 3
+            embedMicroApp false
+        }
+        release {
+            signingConfig signingConfigs.config
+            applicationIdSuffix ''
+            zipAlignEnabled true
+            debuggable false
+            postprocessing {
+                removeUnusedCode true
+                removeUnusedResources true
+                obfuscate true
+                optimizeCode true
+                proguardFiles getDefaultProguardFile('proguard-defaults.txt'), 'project-proguard-rules.pro', 'proguard-rules.pro'
+            }
+        }
+        debug {
+            applicationIdSuffix '.debug'
+            zipAlignEnabled false
+            debuggable true
+            postprocessing {
+                removeUnusedCode false
+                removeUnusedResources false
+                obfuscate false
+                optimizeCode false
+            }
+            matchingFallbacks = ['release']
+        }
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "${variant.name}-${variant.versionName}.apk"
+        }
+    }
+}
+dependencies {
+    implementation project(':library')
+    implementation 'com.google.android.gms:play-services-base:16.0.1'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.1'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.1'
+}

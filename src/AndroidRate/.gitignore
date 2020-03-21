@@ -1,0 +1,85 @@
+# Copyright 2017 - 2018 Vorlonsoft LLC
+#
+# Licensed under The MIT License (MIT)
+
+# Android Studio
+.navigation/
+captures/
+output.json
+
+# Built application files
+*.aab
+*.ap[_k]
+
+# Built library files
+*.[ajv]ar
+*.apklib
+
+# Built native files
+*~
+*.[ao]
+*.so
+
+# Files for the Dalvik/Android Runtime (ART)
+*.dex
+*.odex
+
+# Generated files
+bin/
+gen/
+out/
+
+# Gradle files
+.gradle/
+build/
+
+# IntelliJ
+## File-based project format
+*.iws
+## Gradle
+.idea/**/gradle.xml
+.idea/**/libraries
+.idea/**/modules.xml
+## Markdown
+.idea/**/markdown-navigator.xml
+## Module files
+*.iml
+## Sensitive or high-churn files
+.idea/**/caches/
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/dynamic.xml
+.idea/**/misc.xml
+.idea/**/sqlDataSources.xml
+.idea/**/uiDesigner.xml
+## User-specific stuff
+.idea/**/assetWizardSettings.xml
+.idea/**/dictionaries
+.idea/**/tasks.xml
+.idea/**/workspace.xml
+## VCS
+.idea/**/vcs.xml
+
+# Java class files
+*.class
+
+# Local configuration file (sdk/ndk path, etc)
+local.properties
+
+# Log Files
+*.log
+
+# macOS
+.DS_Store/
+
+# NDK
+.externalNativeBuild/
+obj/
+
+# Windows thumbnail cache
+Thumbs.db
+
+# Other
+Materials/
+TODO.md

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset name="items" label="COM_USERIDEAS_ITEMS" description="COM_USERIDEAS_ITEMS_PARAMS">
+        <field name="show_title" type="radio" class="btn-group btn-group-yesno" default="1" label="JGLOBAL_SHOW_TITLE_LABEL" description="JGLOBAL_SHOW_TITLE_DESC">
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field name="show_intro" type="radio" class="btn-group btn-group-yesno" default="1" description="JGLOBAL_SHOW_INTRO_DESC" label="JGLOBAL_SHOW_INTRO_LABEL">
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field name="show_category" type="radio" class="btn-group btn-group-yesno" default="1" label="JGLOBAL_SHOW_CATEGORY_LABEL" description="JGLOBAL_SHOW_CATEGORY_DESC">
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field name="show_author" type="radio" class="btn-group btn-group-yesno" default="0" label="JGLOBAL_SHOW_AUTHOR_LABEL" description="JGLOBAL_SHOW_AUTHOR_DESC">
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field name="show_create_date" type="radio" class="btn-group btn-group-yesno" default="0" label="JGLOBAL_SHOW_CREATE_DATE_LABEL" description="JGLOBAL_SHOW_CREATE_DATE_DESC">
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+
+        <field name="show_hits" type="radio" class="btn-group btn-group-yesno" default="0" label="JGLOBAL_SHOW_HITS_LABEL" description="JGLOBAL_SHOW_HITS_DESC">
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+        <field
+                name="show_status"
+                type="radio"
+                class="btn-group btn-group-yesno"
+                default="0"
+                label="COM_USERIDEAS_SHOW_STATUS_LABEL"
+                description="COM_USERIDEAS_SHOW_STATUS_DESC">
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+
+        <field name="show_votes" type="radio" class="btn-group btn-group-yesno"
+               label="COM_USERIDEAS_SHOW_VOTES_LABEL"
+               description="COM_USERIDEAS_SHOW_VOTES_DESC"
+               default="0">
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+
+        <field name="show_button_comments" type="radio" default="0" class="btn-group btn-group-yesno"
+               label="COM_USERIDEAS_DISPLAY_BUTTON_COMMENTS"
+               description="COM_USERIDEAS_DISPLAY_BUTTON_COMMENTS_DESC"
+               >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+
+        <field name="show_tags"
+               type="radio"
+               class="btn-group btn-group-yesno"
+               default="0"
+               label="JGLOBAL_SHOW_TAGS_LABEL"
+               description="JGLOBAL_SHOW_TAGS_DESC"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+
+        <field name="spacer2" type="spacer" hr="true" />
+
+        <field name="category_in_title" type="list" default="0"  label="COM_USERIDEAS_SEO_CATEOGRY_TO_TITLE" description="COM_USERIDEAS_SEO_CATEOGRY_TO_TITLE_DESC" >
+            <option value="0">JNONE</option>
+            <option value="1">COM_USERIDEAS_BEFORE</option>
+            <option value="2">COM_USERIDEAS_AFTER</option>
+        </field>
+
+        <field name="allow_html" type="radio" default="0" label="COM_USERIDEAS_ITEMS_ALLOW_HTML" description="COM_USERIDEAS_ITEMS_ALLOW_HTML_DESC" class="btn-group">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field name="title_length" type="text" label="COM_USERIDEAS_TITLE_LENGTH" description="COM_USERIDEAS_TITLE_LENGTH_DESC" />
+        <field name="intro_length" type="text" label="COM_USERIDEAS_INTRO_LENGTH" description="COM_USERIDEAS_INTRO_LENGTH_DESC" />
+        <field name="items_limit" type="text" default="20" size="50" label="COM_USERIDEAS_ITEMS_LIMIT" description="COM_USERIDEAS_ITEMS_LIMIT_DESC" />
+        <field name="default_access" type="accesslevel" default="1" label="COM_USERIDEAS_DEFAULT_ACCESS_LABEL" description="COM_USERIDEAS_DEFAULT_ACCESS_DESC" size="1" />
+
+        <field name="spacer3" type="spacer" hr="true" />
+
+        <field name="allow_attachment" type="radio" class="btn-group btn-group-yesno" default="0" label="COM_USERIDEAS_ALLOW_ATTACHMENT" description="COM_USERIDEAS_ITEM_ALLOW_ATTACHMENT_DESC">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+    </fieldset>
+
+    <fieldset name="category" label="JCATEGORY" description="COM_USERIDEAS_CONFIG_CATEGORY_SETTINGS_DESC">
+        <field name="show_category_title"
+               type="radio"
+               class="btn-group btn-group-yesno"
+               label="JGLOBAL_SHOW_CATEGORY_TITLE"
+               description="JGLOBAL_SHOW_CATEGORY_TITLE_DESC"
+               default="1"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+
+        <field name="show_category_description"
+               type="radio"
+               class="btn-group btn-group-yesno"
+               default="1"
+               label="JGLOBAL_SHOW_CATEGORY_DESCRIPTION_LABEL"
+               description="JGLOBAL_SHOW_CATEGORY_DESCRIPTION_DESC">
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+
+        <field name="show_category_image"
+               type="radio"
+               class="btn-group btn-group-yesno"
+               default="0"
+               label="JGLOBAL_SHOW_CATEGORY_IMAGE_LABEL"
+               description="JGLOBAL_SHOW_CATEGORY_IMAGE_DESC">
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+
+        <field name="show_cat_tags" type="radio" label="COM_USERIDEAS_FIELD_SHOW_CATEGORY_TAGS_LABEL" description="COM_USERIDEAS_FIELD_SHOW_CATEGORY_TAGS_DESC" class="btn-group btn-group-yesno" default="1">
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+
+        <field name="show_post_button" type="radio" default="1"
+               label="COM_USERIDEAS_ITEMS_SHOW_BUTTON_POST_LABEL"
+               description="COM_USERIDEAS_ITEMS_SHOW_BUTTON_POST_DESC"
+               class="btn-group btn-group-yesno">
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+
+        <field name="show_category_subcategories" type="radio" label="COM_USERIDEAS_SHOW_SUBCATEGOIRES_LABEL" description="COM_USERIDEAS_VIEW_SUBCATEGORIES_DESC" class="btn-group btn-group-yesno" default="0">
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+    </fieldset>
+
+    <fieldset name="shared" label="COM_USERIDEAS_SHARED_LABEL" description="COM_USERIDEAS_SHARED_DESC">
+        <field name="orderby_pri" type="list" default="none" label="JGLOBAL_CATEGORY_ORDER_LABEL" description="JGLOBAL_CATEGORY_ORDER_DESC">
+            <option value="none">JGLOBAL_NO_ORDER</option>
+            <option value="alpha">JGLOBAL_TITLE_ALPHABETICAL</option>
+            <option value="ralpha">JGLOBAL_TITLE_REVERSE_ALPHABETICAL</option>
+            <option value="order">JGLOBAL_CATEGORY_MANAGER_ORDER</option>
+        </field>
+        <field name="orderby_sec" type="list" default="rdate" label="COM_USERIDEAS_ITEM_ORDER_LABEL" description="COM_USERIDEAS_ITEM_ORDER_DESC">
+            <option value="rdate">JGLOBAL_MOST_RECENT_FIRST</option>
+            <option value="date">JGLOBAL_OLDEST_FIRST</option>
+            <option value="alpha">JGLOBAL_TITLE_ALPHABETICAL</option>
+            <option value="ralpha">JGLOBAL_TITLE_REVERSE_ALPHABETICAL</option>
+            <option value="author">JGLOBAL_AUTHOR_ALPHABETICAL</option>
+            <option value="rauthor">JGLOBAL_AUTHOR_REVERSE_ALPHABETICAL</option>
+            <option value="hits">JGLOBAL_MOST_HITS</option>
+            <option value="rhits">JGLOBAL_LEAST_HITS</option>
+            <option value="votes">COM_USERIDEAS_MOST_VOTES</option>
+            <option value="rvotes">COM_USERIDEAS_LEAST_VOTES</option>
+            <option value="random">JGLOBAL_RANDOM_ORDER</option>
+            <option value="order">JGLOBAL_ARTICLE_MANAGER_ORDER</option>
+        </field>
+        <field name="show_pagination" type="list" default="2" label="JGLOBAL_PAGINATION_LABEL" description="JGLOBAL_PAGINATION_DESC">
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+            <option value="2">JGLOBAL_AUTO</option>
+        </field>
+        <field name="show_pagination_results" type="radio" class="btn-group btn-group-yesno" default="1" label="JGLOBAL_PAGINATION_RESULTS_LABEL" description="JGLOBAL_PAGINATION_RESULTS_DESC">
+            <option value="1">JSHOW</option>
+            <option value="0">JHIDE</option>
+        </field>
+    </fieldset>
+
+    <fieldset name="categories" label="JCATEGORIES" description="COM_USERIDEAS_CONFIG_CATEGORIES_SETTINGS_DESC">
+        <field name="show_categories_title" type="radio" class="btn-group btn-group-yesno" default="1" label="COM_USERIDEAS_CATEGORY_TITLE" description="COM_USERIDEAS_CATEGORY_TITLE_DESC" >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+
+        <field name="show_categories_description" type="radio" class="btn-group btn-group-yesno" default="1" label="COM_USERIDEAS_CATEGORY_DESCRIPTION" description="COM_USERIDEAS_CATEGORY_DESCRIPTION_DESC">
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+
+        <field name="show_categories_image" type="radio" class="btn-group btn-group-yesno" default="1" label="COM_USERIDEAS_CATEGORY_IMAGE" description="COM_USERIDEAS_CATEGORY_IMAGE_DESC">
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+
+        <field name="show_categories_items_number" type="radio" class="btn-group btn-group-yesno" default="1" label="COM_USERIDEAS_ITEMS_NUMBER" description="COM_USERIDEAS_ITEMS_NUMBER_DESC">
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+
+        <field name="show_categories_subcategories" type="radio" class="btn-group btn-group-yesno" default="1" label="COM_USERIDEAS_SUBCATEGORIES" description="COM_USERIDEAS_VIEW_CATEGORIES_SUBCATEGORIES_DESC" >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>
+    </fieldset>
+
+    <fieldset name="comments" label="COM_USERIDEAS_COMMENTS" description="COM_USERIDEAS_COMMENTS_PARAMS">
+        <field name="comments_enabled" type="radio" default="1" label="COM_USERIDEAS_COMMENTS_ENABLED" description="COM_USERIDEAS_COMMENTS_ENABLED_DESC" class="btn-group">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="comments_allow_attachment" type="radio" class="btn-group btn-group-yesno" default="0" label="COM_USERIDEAS_ALLOW_ATTACHMENT" description="COM_USERIDEAS_COMMENTS_ALLOW_ATTACHMENT_DESC">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+    </fieldset>
+    
+    <fieldset name="integration" label="COM_USERIDEAS_INTEGRATION" description="COM_USERIDEAS_INTEGRATION_PARAMS">
+        <field name="integration_social_platform" type="list" default="" label="COM_USERIDEAS_INTEGRATION_SOCIAL_PLATFORM" description="COM_USERIDEAS_INTEGRATION_SOCIAL_PLATFORM_DESC">
+            <option value="">COM_USERIDEAS_NONE</option>
+            <option value="socialcommunity">COM_USERIDEAS_SOCIAL_COMMUNITY</option>
+            <option value="kunena">COM_USERIDEAS_KUNENA</option>
+            <option value="easysocial">COM_USERIDEAS_EASYSOCIAL</option>
+            <option value="easyprofile">COM_USERIDEAS_EASYPROFILE</option>
+            <option value="communitybuilder">COM_USERIDEAS_COMMUNITY_BUILDER</option>
+            <option value="jomsocial">COM_USERIDEAS_JOMSOCIAL</option>
+            <option value="gravatar">COM_USERIDEAS_GRAVATAR</option>
+        </field>
+        <field name="integration_avatars_size" type="list" default="small" label="COM_USERIDEAS_AVATARS_SIZE" description="COM_USERIDEAS_AVATARS_SIZE_DESC" >
+            <option value="icon">COM_USERIDEAS_ICON</option>
+            <option value="small">COM_USERIDEAS_SMALL</option>
+            <option value="medium">COM_USERIDEAS_MEDIUM</option>
+            <option value="large">COM_USERIDEAS_LARGE</option>
+        </field>
+        <field name="integration_avatars_default" type="text" default="/media/com_userideas/images/no-profile.png" label="COM_USERIDEAS_AVATARS_DEFAULT" description="COM_USERIDEAS_AVATARS_DEFAULT_DESC" class="input-xxlarge" />
+        <field name="integration_display_owner_avatar" type="radio" default="0" label="COM_USERIDEAS_DISPLAY_OWNER_AVATAR" description="COM_USERIDEAS_DISPLAY_OWNER_AVATAR_DESC" class="btn-group">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="integration_name_type" type="list" default="name" label="COM_USERIDEAS_OWNER_NAME" description="COM_USERIDEAS_OWNER_NAME_DESC">
+            <option value="name">COM_USERIDEAS_NAME</option>
+            <option value="username">COM_USERIDEAS_USERNAME</option>
+        </field>
+        <field name="integration_avatar_width" type="text" default="24" label="COM_USERIDEAS_OWNER_AVATAR_WIDTH" description="COM_USERIDEAS_AVATAR_WIDTH_DESC" />
+        <field name="integration_avatar_height" type="text" default="24" label="COM_USERIDEAS_OWNER_AVATAR_HEIGHT" description="COM_USERIDEAS_AVATAR_HEIGHT_DESC" />
+    </fieldset>
+
+    <fieldset name="filesystem_options" label="COM_USERIDEAS_FILESYSTEMS" description="COM_USERIDEAS_FILESYSTEMS_PARAMS" addfieldpath="/libraries/Prism/ui/fields">
+        <field name="filesystem" type="list" default="local" label="COM_USERIDEAS_FILESYSTEM" description="COM_USERIDEAS_FILESYSTEM_DESC">
+            <option value="local">COM_USERIDEAS_LOCAL</option>
+            <option value="amazon_s3">COM_USERIDEAS_AMAZON_S3</option>
+        </field>
+
+        <field name="local_media_folder" type="text" default="media/userideas" label="COM_USERIDEAS_LOCAL_MEDIA_DIRECTORY" description="COM_USERIDEAS_LOCAL_MEDIA_DIRECTORY_DESC" class="xx-large"/>
+
+        <field name="amazon_bucket" type="text" label="COM_USERIDEAS_AMAZON_S3_BUCKET" description="COM_USERIDEAS_AMAZON_S3_BUCKET_DESC" class="input-xxlarge"/>
+        <field name="amazon_key" type="text" label="COM_USERIDEAS_AMAZON_S3_KEY" description="COM_USERIDEAS_AMAZON_S3_KEY_DESC" class="input-xxlarge"/>
+        <field name="amazon_secret" type="text" label="COM_USERIDEAS_AMAZON_S3_SECRET" description="COM_USERIDEAS_AMAZON_S3_SECRET_DESC" class="input-xxlarge"/>
+
+        <field name="amazon_region" type="list" default="us-east-1" label="COM_USERIDEAS_AMAZON_S3_REGION" description="COM_USERIDEAS_AMAZON_S3_REGION_DESC" class="btn-group">
+            <option value="us-east-1">COM_USERIDEAS_AMAZON_S3_REGION_US_EAST_1</option>
+            <option value="us-west-1">COM_USERIDEAS_AMAZON_S3_REGION_US_WEST_1</option>
+            <option value="us-west-2">COM_USERIDEAS_AMAZON_S3_REGION_US_WEST_2</option>
+            <option value="eu-west-1">COM_USERIDEAS_AMAZON_S3_REGION_EU_WEST_1</option>
+            <option value="eu-west-2">COM_USERIDEAS_AMAZON_S3_REGION_EU_WEST_2</option>
+            <option value="ap-southeast-1">COM_USERIDEAS_AMAZON_S3_REGION_AP_SOUTHEAST_1</option>
+            <option value="ap-southeast-2">COM_USERIDEAS_AMAZON_S3_REGION_AP_SOUTHEAST_2</option>
+            <option value="ap-northeast-1">COM_USERIDEAS_AMAZON_S3_REGION_AP_NORTHEAST_1</option>
+            <option value="sa-east-1">COM_USERIDEAS_AMAZON_S3_REGION_SA_EAST_1</option>
+        </field>
+        <field name="remote_media_folder" type="text" default="userideas" label="COM_USERIDEAS_REMOTE_MEDIA_DIRECTORY" description="COM_USERIDEAS_REMOTE_MEDIA_DIRECTORY_DESC" class="input-xxlarge" />
+        <field name="remote_domain" type="text" label="COM_USERIDEAS_DOMAIN" description="COM_USERIDEAS_REMOTE_DOMAIN_DESC" class="input-xxlarge" />
+        <field name="legal_extensions" type="text" default="pdf, rtf, doc, pps, ppt, xls, png, jpg, jpeg, bmp, gif" label="COM_USERIDEAS_LEGAL_EXTENSIONS" description="COM_USERIDEAS_LEGAL_EXTENSIONS_DESC" class="input-xxlarge"/>
+        <field name="legal_types" type="textarea" default="application/pdf, text/rtf, application/powerpoint, application/mspowerpoint, application/msword, application/excel, application/vnd.ms-powerpoint, image/png, image/gif, image/jpeg, image/pjpeg, image/bmp, image/x-windows-bmp" label="COM_USERIDEAS_LEGAL_MIME_TYPES" description="COM_USERIDEAS_LEGAL_MIME_TYPES_DESC" class="input-xxlarge"/>
+        <field name="max_size" type="prismtext" default="5" suffix="MB" label="COM_USERIDEAS_MAX_SIZE_MB" description="COM_USERIDEAS_MAX_SIZE_MB_DESC" class="input-mini"/>
+    </fieldset>
+    
+    <fieldset name="security" label="COM_USERIDEAS_SECURITY" description="COM_USERIDEAS_SECURITY_PARAMS">
+        <field name="security_item_auto_publish" type="radio" default="0" label="COM_USERIDEAS_SECURITY_ITEM_AUTO_PUBLISH" description="COM_USERIDEAS_SECURITY_ITEM_AUTO_PUBLISH_DESC" class="btn-group">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="security_comment_auto_publish" type="radio" default="0" label="COM_USERIDEAS_SECURITY_COMMENT_AUTO_PUBLISH" description="COM_USERIDEAS_SECURITY_COMMENT_AUTO_PUBLISH_DESC" class="btn-group">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="captcha" type="plugins" folder="captcha" default="" label="COM_USERIDEAS_CAPTCHA_LABEL" description="COM_USERIDEAS_CAPTCHA_DESC" filter="cmd">
+            <option value="">JOPTION_USE_DEFAULT</option>
+            <option value="0">JOPTION_DO_NOT_USE</option>
+        </field>
+     </fieldset>
+     
+    <fieldset name="debug" label="COM_USERIDEAS_DEBUG" description="COM_USERIDEAS_DEBUG_PARAMS">
+        <field name="debug_item_adding_disabled" type="radio" default="0" label="COM_USERIDEAS_DEBUG_ITEM_ADDING_DISABLED" description="COM_USERIDEAS_DEBUG_ITEM_ADDING_DISABLED_DESC" class="btn-group">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="debug_disabled_functionality_msg" type="textarea" class="input-xxlarge" label="COM_USERIDEAS_MESSAGE" description="COM_USERIDEAS_DEBUG_DISABLED_FUNCTIONALITY_MSG_DESC" />
+     </fieldset>
+
+    <fieldset name="advanced" label="COM_USERIDEAS_ADVANCED" description="COM_USERIDEAS_ADVANCED_PARAMS">
+        <field name="enable_chosen" type="radio" default="0" label="COM_USERIDEAS_ENABLE_CHOSEN" description="COM_USERIDEAS_ENABLE_CHOSEN_DESC" class="btn-group">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="redirect_when_post" type="list" default="list" label="COM_USERIDEAS_REDIRECT_WHEN_POST" description="COM_USERIDEAS_REDIRECT_WHEN_POST_DESC">
+            <option value="list">COM_USERIDEAS_LIST</option>
+            <option value="form">COM_USERIDEAS_FORM</option>
+        </field>
+        <field name="administrator_id" type="user" label="COM_USERIDEAS_ADMINISTRATOR" description="COM_USERIDEAS_FIELD_ADMINISTRATOR_DESC" />
+        <field name="login_page_url" type="text" class="input-xxlarge" label="COM_USERIDEAS_LOGIN_PAGE_URL" description="COM_USERIDEAS_LOGIN_PAGE_URL_DESC" />
+    </fieldset>
+
+    <fieldset name="permissions" description="JCONFIG_PERMISSIONS_DESC" label="JCONFIG_PERMISSIONS_LABEL">
+        <field name="rules" type="rules" component="com_userideas" filter="rules" validate="rules" label="JCONFIG_PERMISSIONS_LABEL" section="component"/>
+    </fieldset>
+</config>

@@ -1,0 +1,130 @@
+/**
+ * Modal Styling
+ */
+
+.user-feedback-modal {
+	position: absolute;
+	z-index: 100200;
+	padding: 15px;
+	width: 400px;
+	border: 1px solid $color-gray;
+	border-radius: 3px;
+	background: $color-white;
+	color: $color-black;
+	user-select: none;
+	margin-right: -15px;
+	pointer-events: auto;
+
+	&.top {
+		top: -10px;
+
+		.user-feedback-modal__arrow {
+			top: 15px;
+		}
+	}
+	&.right {
+		right: 90px;
+
+		.user-feedback-modal__arrow {
+			margin-right: -16px;
+			right: -15px;
+			border-left-color: $color-white;
+		}
+	}
+	&.bottom {
+		bottom: -10px;
+
+		.user-feedback-modal__arrow {
+			bottom: 15px;
+		}
+	}
+	&.left {
+		left: 75px;
+
+		.user-feedback-modal__arrow {
+			margin-left: -16px;
+			left: -15px;
+			border-right-color: $color-white;
+		}
+	}
+	&.middle {
+		left: 0;
+		right: 0;
+		top: 75px;
+
+		&.top {
+			.user-feedback-modal__arrow {
+				margin-top: -16px;
+				top: -15px;
+				border-bottom-color: $color-white;
+			}
+		}
+
+		&.bottom {
+			top: auto;
+			bottom: 75px;
+
+			.user-feedback-modal__arrow {
+				margin-bottom: -16px;
+				bottom: -15px;
+				border-top-color: $color-white;
+			}
+		}
+	}
+}
+
+.user-feedback-modal__arrow {
+	position: absolute;
+	height: 16px;
+	width: 32px;
+	display: block;
+	pointer-events: none;
+	border: solid transparent;
+	border-width: 16px;
+	border-color: rgba($color-gray, 0);
+}
+
+.user-feedback-modal__topbar {
+	padding-bottom: 10px;
+	border-bottom: 1px solid $color-light-gray;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.user-feedback-modal-title {
+	float: left;
+	margin: 0;
+	padding: 0;
+	// some people use !important for generic things like this. makes me sad :(
+	color: $color-blue !important;
+	font-family: $font-stack;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 400;
+}
+
+// Close button in the upper right corner
+.user-feedback-button-close {
+	float: right;
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	line-height: 28px;
+	cursor: pointer;
+	background: transparent;
+	color: $color-gray;
+	font-size: 20px;
+	font-weight: normal;
+
+	&:focus,
+	&:hover {
+		background: transparent;
+		color: $color-black;
+	}
+
+	&:focus {
+		color: $color-blue-hover;
+		border: 1px solid;
+		border-radius: 100%;
+	}
+}

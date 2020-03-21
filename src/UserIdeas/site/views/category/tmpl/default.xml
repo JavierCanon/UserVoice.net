@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_USERIDEAS_VIEW_CATEGORY_TITLE">
+        <message>
+            <![CDATA[COM_USERIDEAS_VIEW_CATEGORY_DESC]]>
+        </message>
+    </layout>
+    
+    <!-- Add fields to the request variables for the layout. -->
+    <fields name="request">
+        <fieldset name="request">
+            
+            <field name="id" type="category"
+               label="COM_USERIDEAS_VIEW_FIELD_CATEGORIES_TITLE"
+               description="COM_USERIDEAS_VIEW_FIELD_CATEGORIES_DESC"
+               extension="com_userideas"
+               required="true"
+           />
+            
+        </fieldset>
+    </fields>
+
+    <fields name="params">
+        <fieldset name="basic" label="JGLOBAL_CATEGORY_OPTIONS">
+            <field name="show_category_title"
+                   type="list"
+                   class="chzn-color"
+                   label="JGLOBAL_SHOW_CATEGORY_TITLE"
+                   description="JGLOBAL_SHOW_CATEGORY_TITLE_DESC"
+                   default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+
+            <field name="show_category_description"
+                   type="list"
+                   class="chzn-color"
+                   default=""
+                   label="JGLOBAL_SHOW_CATEGORY_DESCRIPTION_LABEL"
+                   description="JGLOBAL_SHOW_CATEGORY_DESCRIPTION_DESC">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+
+            <field name="show_category_image"
+                   type="list"
+                   class="chzn-color"
+                   default=""
+                   label="JGLOBAL_SHOW_CATEGORY_IMAGE_LABEL"
+                   description="JGLOBAL_SHOW_CATEGORY_IMAGE_DESC">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+
+            <field name="show_cat_tags" type="list"
+                   label="COM_USERIDEAS_FIELD_SHOW_CATEGORY_TAGS_LABEL"
+                   description="COM_USERIDEAS_FIELD_SHOW_CATEGORY_TAGS_DESC"
+                   class="chzn-color"
+                   default=""
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+            <field name="show_post_button" type="list" default=""
+                   label="COM_USERIDEAS_ITEMS_SHOW_BUTTON_POST_LABEL"
+                   description="COM_USERIDEAS_ITEMS_SHOW_BUTTON_POST_DESC"
+                   class="chzn-color">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+        </fieldset>
+
+        <fieldset name="items" label="COM_USERIDEAS_OPTIONS">
+            <field
+                    name="show_title" default=""
+                    type="list"
+                    class="chzn-color"
+                    label="JGLOBAL_SHOW_TITLE_LABEL"
+                    description="JGLOBAL_SHOW_TITLE_DESC">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+
+            <field name="show_intro" default=""
+                   type="list"
+                   class="chzn-color"
+                   description="JGLOBAL_SHOW_INTRO_DESC"
+                   label="JGLOBAL_SHOW_INTRO_LABEL"
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+
+            <field
+                    name="show_category" default=""
+                    type="list"
+                    class="chzn-color"
+                    label="JGLOBAL_SHOW_CATEGORY_LABEL"
+                    description="JGLOBAL_SHOW_CATEGORY_DESC">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option	value="0">JHIDE</option>
+                <option	value="1">JSHOW</option>
+            </field>
+
+            <field
+                    name="show_author" default=""
+                    type="list"
+                    class="chzn-color"
+                    label="JGLOBAL_SHOW_AUTHOR_LABEL"
+                    description="JGLOBAL_SHOW_AUTHOR_DESC">
+                <option	value="">JGLOBAL_USE_GLOBAL</option>
+                <option	value="0">JHIDE</option>
+                <option	value="1">JSHOW</option>
+            </field>
+
+            <field
+                    name="show_create_date" default=""
+                    type="list"
+                    class="chzn-color"
+                    label="JGLOBAL_SHOW_CREATE_DATE_LABEL"
+                    description="JGLOBAL_SHOW_CREATE_DATE_DESC">
+                <option	value="">JGLOBAL_USE_GLOBAL</option>
+                <option	value="0">JHIDE</option>
+                <option	value="1">JSHOW</option>
+            </field>
+
+            <field
+                    name="show_hits" default=""
+                    type="list"
+                    class="chzn-color"
+                    label="JGLOBAL_SHOW_HITS_LABEL"
+                    description="JGLOBAL_SHOW_HITS_DESC">
+                <option	value="">JGLOBAL_USE_GLOBAL</option>
+                <option	value="0">JHIDE</option>
+                <option	value="1">JSHOW</option>
+            </field>
+
+            <field
+                    name="show_status" default=""
+                    type="list"
+                    class="chzn-color"
+                    label="COM_USERIDEAS_SHOW_STATUS_LABEL"
+                    description="COM_USERIDEAS_SHOW_STATUS_DESC">
+                <option	value="">JGLOBAL_USE_GLOBAL</option>
+                <option	value="0">JHIDE</option>
+                <option	value="1">JSHOW</option>
+            </field>
+
+            <field name="show_button_comments" type="list" default=""
+                   class="chzn-color"
+                   label="COM_USERIDEAS_DISPLAY_BUTTON_COMMENTS"
+                   description="COM_USERIDEAS_DISPLAY_BUTTON_COMMENTS_DESC"
+            >
+                <option	value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+            <field name="show_tags" default=""
+                   type="list"
+                   class="chzn-color"
+                   label="JGLOBAL_SHOW_TAGS_LABEL"
+                   description="JGLOBAL_SHOW_TAGS_DESC"
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+            <field name="allow_html" type="list" default="" label="COM_USERIDEAS_ITEMS_ALLOW_HTML" description="COM_USERIDEAS_ITEMS_ALLOW_HTML_DESC" class="chzn-color">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field name="intro_length" type="text" label="COM_USERIDEAS_INTRO_LENGTH" description="COM_USERIDEAS_INTRO_LENGTH_DESC" />
+            <field name="items_limit" type="text" default="20" size="50" label="COM_USERIDEAS_ITEMS_LIMIT" description="COM_USERIDEAS_ITEMS_LIMIT_DESC" />
+
+            <field
+                    name="spacer1"
+                    type="spacer"
+                    hr="true"
+            />
+
+            <field
+                    name="show_pagination"
+                    type="list"
+                    description="JGLOBAL_PAGINATION_DESC"
+                    label="JGLOBAL_PAGINATION_LABEL"
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+                <option value="2">JGLOBAL_AUTO</option>
+            </field>
+
+            <field
+                    name="show_pagination_results"
+                    type="list"
+                    label="JGLOBAL_PAGINATION_RESULTS_LABEL"
+                    description="JGLOBAL_PAGINATION_RESULTS_DESC"
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+
+            <field
+                    name="orderby_pri"
+                    type="list"
+                    description="JGLOBAL_CATEGORY_ORDER_DESC"
+                    label="JGLOBAL_CATEGORY_ORDER_LABEL"
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="none">JGLOBAL_NO_ORDER</option>
+                <option value="alpha">JGLOBAL_TITLE_ALPHABETICAL</option>
+                <option value="ralpha">JGLOBAL_TITLE_REVERSE_ALPHABETICAL</option>
+                <option value="order">JGLOBAL_CATEGORY_MANAGER_ORDER</option>
+            </field>
+
+            <field
+                    name="orderby_sec"
+                    type="list"
+                    label="COM_USERIDEAS_ITEM_ORDER_LABEL"
+                    description="COM_USERIDEAS_ITEM_ORDER_desc"
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="rdate">JGLOBAL_MOST_RECENT_FIRST</option>
+                <option value="date">JGLOBAL_OLDEST_FIRST</option>
+                <option value="alpha">JGLOBAL_TITLE_ALPHABETICAL</option>
+                <option value="ralpha">JGLOBAL_TITLE_REVERSE_ALPHABETICAL</option>
+                <option value="author">JGLOBAL_AUTHOR_ALPHABETICAL</option>
+                <option value="rauthor">JGLOBAL_AUTHOR_REVERSE_ALPHABETICAL</option>
+                <option value="hits">JGLOBAL_MOST_HITS</option>
+                <option value="rhits">JGLOBAL_LEAST_HITS</option>
+                <option value="votes">COM_USERIDEAS_MOST_VOTES</option>
+                <option value="rvotes">COM_USERIDEAS_LEAST_VOTES</option>
+                <option value="random">JGLOBAL_RANDOM_ORDER</option>
+                <option value="order">JGLOBAL_ARTICLE_MANAGER_ORDER</option>
+            </field>
+        </fieldset>
+
+        <fieldset name="subcategories" label="COM_USERIDEAS_SUBCATEGORIES">
+            <field name="show_category_subcategories" type="list" default="" label="COM_USERIDEAS_SHOW_SUBCATEGOIRES_LABEL" description="COM_USERIDEAS_VIEW_SUBCATEGORIES_DESC" class="chzn-color">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+
+            <field name="subcategories_layout" type="list" default="default" label="COM_USERIDEAS_LAYOUT" description="COM_USERIDEAS_SUBCATEGORIES_LAYOUT_DESC" >
+                <option value="subcategories">COM_USERIDEAS_BOXES</option>
+                <option value="subcategorieslist">COM_USERIDEAS_LIST</option>
+            </field>
+
+            <field name="show_categories_title" type="list" class="chzn-color" default="" label="COM_USERIDEAS_CATEGORY_TITLE" description="COM_USERIDEAS_CATEGORY_TITLE_DESC" >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+
+            <field name="show_categories_description" type="list" class="chzn-color" default="" label="COM_USERIDEAS_CATEGORY_DESCRIPTION" description="COM_USERIDEAS_CATEGORY_DESCRIPTION_DESC">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+
+            <field name="show_categories_image" type="list" class="chzn-color" default="" label="COM_USERIDEAS_CATEGORY_IMAGE" description="COM_USERIDEAS_CATEGORY_IMAGE_DESC">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+
+            <field name="show_categories_items_number" type="list" class="chzn-color" default="" label="COM_USERIDEAS_ITEMS_NUMBER" description="COM_USERIDEAS_ITEMS_NUMBER_DESC">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+
+            <field name="subcategories_per_row" type="text" default="4" label="COM_USERIDEAS_SUBCATEGORIES_PER_ROW" description="COM_USERIDEAS_SUBCATEGORIES_PER_ROW_DESC" />
+        </fieldset>
+    </fields>
+</metadata>

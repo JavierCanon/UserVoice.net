@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+
+        <field name="title" type="text"
+               label="COM_USERIDEAS_TITLE"
+               description="COM_USERIDEAS_STATUS_TITLE_DESC"
+               filter="trim"
+               required="true"
+                />
+
+        <field name="default" type="radio"
+               label="COM_USERIDEAS_DEFAULT"
+               description="COM_USERIDEAS_STATUS_DEFAULT_DESC"
+               class="btn-group"
+               filter="intval"
+               size="1"
+               default="0"
+                >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field name="id" type="text" class="readonly"
+               label="JGLOBAL_FIELD_ID_LABEL"
+               description="JGLOBAL_FIELD_ID_DESC"
+               default="0"
+               readonly="true"
+                />
+
+    </fieldset>
+
+    <fields name="params" label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS">
+
+        <fieldset name="basic">
+
+            <field name="style_class" type="text"
+                   label="COM_USERIDEAS_STYLE_CLASS"
+                   description="COM_USERIDEAS_STYLE_CLASS_DESC"
+                   hint="label-success"
+                   />
+
+        </fieldset>
+
+    </fields>
+
+</form>

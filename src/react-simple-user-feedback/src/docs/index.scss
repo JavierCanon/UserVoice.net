@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400|Sarabun');
+
+
+$sarabun: 'Sarabun', sans-serif;
+$raleway: 'Raleway', sans-serif;
+
+body {
+  font-family: $raleway;
+  font-size: 30px;
+  font-weight: 100;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.doc-subtitle {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.doc-components {
+  display: flex;
+  flex-direction: column;
+}
+
+.doc-component {
+  margin-top: 30px;
+}
+
+.doc-component-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.example-title {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.example-container {
+  margin-top: 30px;
+  border: 2px solid black;
+  padding: 10px;
+  font-family: $sarabun;
+  font-size: 16px;
+  width: 80%;
+  margin-bottom: 5px;
+}
+
+.binary-counter {
+  font-size: 14px;
+}
