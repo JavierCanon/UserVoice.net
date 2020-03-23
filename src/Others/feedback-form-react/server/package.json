@@ -17,7 +17,7 @@
     "dotenv": "^6.0.0",
     "form-data": "^2.3.2",
     "googleapis": "^32.0.0",
-    "knex": "^0.14.6",
+    "knex": "^0.20.13",
     "koa": "^2.5.1",
     "koa-bodyparser": "^4.2.0",
     "koa-helmet": "^4.0.0",
